@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Multivariate Choropleth</title>
+    </head>
+
+    <body style="width: 98%; display: flex; align-items: center; flex-direction: column;">
+        <main style="width: 700px;">
+
+            <h1>Safegraph sg_avg_dist2</h1>
+            <p>
+                The following plot shows the distribution of point swith week number on the y-axis and total count on
+                the x.
+            </p>
+            <p>
+                All of the choropleth plots on this page have the data binned into the quadrants shown on the graph.
+                The sloped line is of y=x, and no points should fall below this line since you cannot have more weeks at
+                a significant value then there are weeks in total.
+            </p>
+            <p>
+                The values that do fall below the line are because they were both hot and cold spots in equal amounts
+                and so their sum of counts is 0.
+            </p>
+
+            <div>
+                <img src="scatter.png" style="width: 700px" />
+            </div>
+
+            <hr />
+
+            <h2>Multivariate as two bivariate Choropleths</h2>
+            <div>
+                <img src="comb_legend.png" style="width: 700px" />
+            </div>
+            <div>
+                <img src="double.png" style="width: 700px;" />
+            </div>
+
+            <h2>The two plots above, combined</h2>
+            <div
+                style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <div>
+                    <img src="comb_legend.png" style="width: 300px" />
+                </div>
+                or
+                <div>
+                    <img src="comb_legend_2.png" style="width: 300px" />
+                </div>
+            </div>
+            <div>
+                <img src="comb.png" style="width: 700px;" />
+            </div>
+
+            <h2>Hot/Cold as different shapes</h2>
+            <div>
+                <img src="heat_as_cat_legend.png" style="width: 700px;" />
+            </div>
+            <div>
+                <img src="heat_as_cat.png" style="width: 700px;" />
+            </div>
+
+            <h2>Both count and recent as quantitative</h2>
+            <p>Though I binned all of the data into the 3 groups shown by the very first scatter plot, plotting this way
+                would allow us to use both count and recentcy as quantitative variables.
+            </p>
+            <div>
+                <img src="both_quant_legend.png" style="width: 700px;" />
+            </div>
+            <div>
+                <img src="both_quant.png" style="width: 700px;" />
+            </div>
+
+            <h2>New Color Scale</h2>
+            <div>
+                <img src="legend.png" style="width: 700px;" />
+            </div>
+        </main>
+
+    </body>
+
+</html>
